@@ -64,7 +64,7 @@ export default function HomePage() {
             <div className="text-center">
               <h2 className="text-4xl md:text-6xl font-bold mb-4">Flared Dreams Collection</h2>
               <p className="text-xl md:text-2xl mb-8">Embrace the retro revival with our latest line</p>
-              <a href="#" className="inline-block bg-white text-black px-6 py-3 text-lg font-semibold rounded hover:bg-gray-200 transition-colors duration-300">
+              <a href="/order.tsx" className="inline-block bg-white text-black px-6 py-3 text-lg font-semibold rounded hover:bg-gray-200 transition-colors duration-300">
                 Shop Now
                 <svg className="inline-block ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -80,7 +80,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { name: "Flared Jeans", price: "$89.99" },
-                { name: "Bell-Bottom Trousers", price: "$79.99" },
+                { name: "Bell-Bottom Trousers", price: "$79.78" },
                 { name: "Retro Flare Dress", price: "$109.99" },
                 { name: "70s Inspired Jumpsuit", price: "$129.99" }
               ].map((product, index) => (
