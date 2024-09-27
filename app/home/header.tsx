@@ -44,7 +44,7 @@ export default function HomePage() {
       <main className="flex-grow">
         <section className="relative bg-blue-900 text-white">
           <Image
-            src="/app\home\hero.jpg"
+            src={'/hero.jpg'}
             alt="Flared Dreams Collection"
             width={500}
             height={300}
