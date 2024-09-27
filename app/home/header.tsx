@@ -34,12 +34,7 @@ export default function HomePage() {
                 <span className="sr-only">Cart</span>
               </button>
               <div className="md:hidden ml-4">
-                <button className="text-gray-500 hover:text-gray-900 p-2">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                  <span className="sr-only">Open menu</span>
-                </button>
+                
               </div>
             </div>
           </div>
@@ -49,10 +44,10 @@ export default function HomePage() {
       <main className="flex-grow">
         <section className="relative bg-blue-900 text-white">
           <Image
-            src="/hero.jpg"
+            src="/home/hero.jpg"
             alt="Flared Dreams Collection"
-            width={1600}
-            height={800}
+            width={500}
+            height={300}
             className="object-cover w-full h-[70vh]"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -71,7 +66,7 @@ export default function HomePage() {
 
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold mb-8 text-center" >Featured Products</h3>
+            <h3 className="text-3xl font-bold mb-8 text-center text-black" >Featured Products</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { name: "Flared Jeans", price: "$89.99" },
@@ -79,7 +74,7 @@ export default function HomePage() {
                 { name: "Retro Flare Dress", price: "$109.99" },
                 { name: "70s Inspired Jumpsuit", price: "$129.99" }
               ].map((product, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden text-black">
                   <Image
                     src={`/placeholder.svg?height=300&width=300&text=${product.name}`}
                     alt={product.name}
@@ -91,7 +86,7 @@ export default function HomePage() {
                     <h4 className="font-semibold mb-2">{product.name}</h4>
                     <p className="text-gray-600">{product.price}</p>
                     <button className="w-full mt-4 bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 transition-colors duration-300">
-                      Add to Cart
+                     Buy
                     </button>
                   </div>
                 </div>
